@@ -1,0 +1,178 @@
+  html, body { 
+    width:100%;
+    height:100%;
+    margin:0;
+  }
+  
+  body { 
+    display:flex; 
+    background-color: rgb(43, 40, 40);
+  }
+
+  /*consola*/
+  .gameboy {
+    margin:auto;
+    position:relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height:600px;
+    padding:20px;
+    border-radius:25px;
+    background-color:yellow;
+  }
+  
+  /*Pantalla Oscura*/
+  .areaPantalla {
+    position:relative;
+    padding:35px 40px 10px 40px;
+    color:#6b9ebb;
+    background-color:#1f1f20;
+    border-radius:20px 20px 20px 20px;
+
+  }
+  
+  .powerButton {
+    position:absolute;
+    text-align:center;
+    font-size:8px;
+    width:40px;
+    top:80px;
+    left:0px;
+  }
+  
+  .ledPower {
+    position:relative;
+    display:inline-block;
+    background-color:#721515;
+    width:6px;
+    height:6px;
+    border-radius:100%;
+  }
+
+  .title {
+    display:inline;
+    text-align:center;
+    font-weight:bold;
+    font-style:italic;
+    margin-left: 10px;
+    font-size:20px;
+  }
+  
+  .titleColor {
+    display:inline;
+    font-family:"Comic Sans MS";
+    font-weight:bold;
+    letter-spacing:-4px;
+  }
+  
+  /* Pantalla Juego */
+  .screen {
+    background-image: url('../img/Imagen.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; 
+    height:200px;
+    width:210px;
+  }
+  
+  /*Logo Inferior nintendo*/
+  .nintendoLogo {
+    margin:0 auto;
+    font-weight:bold;
+    text-align:center;
+    margin-top:30px;
+    width:100px;
+    color:rgba(0, 0, 0, 0.082);
+    border:2px solid rgba(0, 0, 0, 0.082);
+    border-radius:11px;
+  }
+  
+  /*Controles gameboy*/
+  .controls {
+    display:flex;
+    justify-content:space-between;
+    position: relative;
+  }
+  
+  .cross {
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+
+  .horizontal, .vertical {
+    position: absolute;
+    background-color: #383a41;
+    width: 100%;
+    height: 28px;
+    left: 23px;
+    top: 60%;
+    border-radius: 10%;
+    cursor: pointer;
+  }
+
+  .vertical {
+    width: 28px;
+    height: 100%;
+    top: 21px;
+    left: 60%;
+    cursor: pointer;
+  }
+  
+
+/* Botones A / B */
+.A-B{
+  position: relative;
+  width: 80px; 
+  height: 90px;
+  }
+
+  .ButtonA {
+  top: 20px;
+  right: 20px; 
+  }
+
+  .ButtonB {
+  top: 50px;
+  left: -35px; 
+  }
+
+  .ButtonA,
+  .ButtonB {
+  position: absolute;
+  font-size: 22px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #383a41;
+  color: #383a41;
+  text-shadow: 0px -1px 1px #ffffff2f;
+  cursor: pointer;
+}
+
+  /* Parte Inferior */
+  .start-select {
+  display: flex;
+  justify-content: center;
+  }
+
+  .selectArea,
+  .startArea {
+  margin: 3px; 
+  width: 30px;
+  height: 10px;
+  margin-left: 16px;
+  border-radius: 50%;
+  background: #383a41;
+  cursor: pointer;
+}
+
+  .select,
+  .start {
+  font-size: 11px;
+  color:rgba(0, 0, 0, 0.082);
+  width: 60px;
+  text-align: center;
+  margin-top: 60px;
+}
